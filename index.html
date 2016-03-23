@@ -4,24 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Georgette</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <scrip src="script.js"></scrip>
 </head>
 
 <body>
-
-  <div class="insercao">
     <h3>Selecione Imagem</h3>
-    <input type="file" onchange="previewFile()" />
+  <div class="insercao">
+
+    <div class="span btn btn-default btn-file">
+      Procurar imagem <input type="file" onchange="previewFile()" />
+    </div>
+
+    <button type="button" class="btn btn-primary" onclick="colarMascara('azul')">Azul</button>
+    <button type="button" class="btn btn-warning" onclick="colarMascara('amarelo')">Amarelo</button>
+
   </div>
-  <div class="imagem">
-    <div class="mascara top"><img src="" alt=""></div>
-    <img class="foto"/>
-    <div class="mascara bottom"><img src="" alt=""></div>
+  <div class="camarada">
+    <div class="imagem">
+      <div class="mascara top"><img src="" alt=""></div>
+      <img class="foto"/>
+      <div class="mascara bottom"><img src="" alt=""></div>
+    </div>
   </div>
+
+  <button onclick="download()">download</button>
+
 
   <script src="http://localhost:4500/livereload.js" charset="utf-8"></script>
   <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="bower_components/html2canvas/build/html2canvas.min.js" charset="utf-8"></script>
   <script src="script.js" charset="utf-8"></script>
 </body>
 

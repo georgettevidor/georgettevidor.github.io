@@ -1,40 +1,74 @@
-body{
+body {
+  $width:150px;
+  $height: 34px;
 
-}
+  .insercao{
+    display: flex;
+    align-items: center;
+    margin-bottom:1em;
 
-.imagem{
+    *{
+      margin-right:10px;
+    }
 
-  position: relative;
-
-  .foto{
-    margin-top: 10px;
-    width:50vw;
   }
 
-  *{
-    position: absolute;
-  }
+  .imagem {
+    // position: relative;
+    width: 400px;
 
-  .top, .bottom{
+    img {
+      max-width: 100%;
+      height: auto;
+    }
 
-    z-index: 10;
+    .foto {
+      margin-top: 10px;
+    }
 
-    img{
-      width:100%;
-      height:auto;
+    .top, .bottom {
+      // position: absolute;
+      z-index: 10;
+    }
+    .top {
+      top: 0;
+    }
+    .bottom {
+      bottom: 0;
     }
   }
 
-  .top{
-    top:0;
+  .btn{
+
+
+    height: $height;
   }
 
-  .bottom{
-    bottom:0;
+  .btn-file{
+
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width:$width;
+
+    input[type=file] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width:$width;
+      height: $height;
+      height: auto;
+      font-size: 100px;
+      text-align: right;
+      filter: alpha(opacity=0);
+      opacity: 0;
+      outline: none;
+      background: white;
+      cursor: inherit;
+    }
   }
 
-  svg{
-    width:100%;
-    height:auto;
-  }
+
+
+
 }

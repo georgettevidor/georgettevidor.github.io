@@ -1,19 +1,43 @@
-.imagem {
-  position: relative; }
-  .imagem .foto {
-    margin-top: 10px;
-    width: 50vw; }
-  .imagem * {
-    position: absolute; }
-  .imagem .top, .imagem .bottom {
-    z-index: 10; }
-    .imagem .top img, .imagem .bottom img {
-      width: 100%;
-      height: auto; }
-  .imagem .top {
-    top: 0; }
-  .imagem .bottom {
-    bottom: 0; }
-  .imagem svg {
-    width: 100%;
+body .insercao {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em; }
+  body .insercao * {
+    margin-right: 10px; }
+
+body .imagem {
+  width: 400px; }
+  body .imagem img {
+    max-width: 100%;
     height: auto; }
+  body .imagem .foto {
+    margin-top: 10px; }
+  body .imagem .top, body .imagem .bottom {
+    z-index: 10; }
+  body .imagem .top {
+    top: 0; }
+  body .imagem .bottom {
+    bottom: 0; }
+
+body .btn {
+  height: 34px; }
+
+body .btn-file {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 150px; }
+  body .btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 34px;
+    height: auto;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit; }
