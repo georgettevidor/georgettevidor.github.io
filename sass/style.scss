@@ -1,0 +1,40 @@
+body{
+
+}
+
+.imagem{
+
+  position: relative;
+
+  .foto{
+    margin-top: 10px;
+    width:50vw;
+  }
+
+  *{
+    position: absolute;
+  }
+
+  .top, .bottom{
+
+    z-index: 10;
+
+    img{
+      width:100%;
+      height:auto;
+    }
+  }
+
+  .top{
+    top:0;
+  }
+
+  .bottom{
+    bottom:0;
+  }
+
+  svg{
+    width:100%;
+    height:auto;
+  }
+}

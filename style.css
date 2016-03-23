@@ -1,0 +1,19 @@
+.imagem {
+  position: relative; }
+  .imagem .foto {
+    margin-top: 10px;
+    width: 50vw; }
+  .imagem * {
+    position: absolute; }
+  .imagem .top, .imagem .bottom {
+    z-index: 10; }
+    .imagem .top img, .imagem .bottom img {
+      width: 100%;
+      height: auto; }
+  .imagem .top {
+    top: 0; }
+  .imagem .bottom {
+    bottom: 0; }
+  .imagem svg {
+    width: 100%;
+    height: auto; }
