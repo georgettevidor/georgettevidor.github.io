@@ -13,12 +13,16 @@ body {
 
   }
 
+  a#download{
+    display:none;
+  }
+
   .imagem {
-    // position: relative;
+    position: relative;
     width: 400px;
 
     img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
     }
 
@@ -26,9 +30,12 @@ body {
       margin-top: 10px;
     }
 
+
+
     .top, .bottom {
-      // position: absolute;
+      position: absolute;
       z-index: 10;
+
     }
     .top {
       top: 0;

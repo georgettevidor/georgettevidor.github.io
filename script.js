@@ -3,8 +3,6 @@ var svg = {};
 var AMARELO = 'amarelo';
 var AZUL = 'azul';
 
-console.log();
-
 function previewFile() {
   var preview = document.querySelector('.foto');
   var file = document.querySelector('input[type=file]').files[0];
@@ -28,13 +26,16 @@ function colarMascara(cor) {
   $('.mascara.top img').attr('src', caminho + 'cima.png');
   $('.mascara.bottom img').attr('src', caminho + 'baixo.png');
 
+  carregarImagem();
+
 }
 
-
-function download(){
-  html2canvas(document.querySelector('.camarada'), {
-    onrendered: function(canvas) {
-      document.body.appendChild(canvas);
-    }
-  });
+function carregarImagem(){
+    html2canvas(document.querySelector('.imagem'), {
+      onrendered: function(canvas) {
+        var url = canvas.toDataURL('image/png');
+        $('a#download').attr('href',url);
+        $('a#download').css('display','inline');
+      }
+    });
 }

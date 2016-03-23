@@ -5,14 +5,19 @@ body .insercao {
   body .insercao * {
     margin-right: 10px; }
 
+body a#download {
+  display: none; }
+
 body .imagem {
+  position: relative;
   width: 400px; }
   body .imagem img {
-    max-width: 100%;
+    width: 100%;
     height: auto; }
   body .imagem .foto {
     margin-top: 10px; }
   body .imagem .top, body .imagem .bottom {
+    position: absolute;
     z-index: 10; }
   body .imagem .top {
     top: 0; }
