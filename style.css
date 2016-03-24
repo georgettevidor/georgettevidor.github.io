@@ -1,6 +1,10 @@
 body .insercao {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1em; }
   body .insercao * {
     margin-right: 10px; }
@@ -28,6 +32,8 @@ body .btn {
   height: 34px; }
 
 body .btn-file {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   position: relative;
